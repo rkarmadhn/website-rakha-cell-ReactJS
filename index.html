@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Rakha Cellular - Service Cepat, Tepat, Terbaik" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rakhacell.netlify.app/id/home" />
+    <meta property="og:description" content="Toko Rakha Cellular, Jasa service Smartphone all type, dengan Teknisi yang profesional serta pengalaman yang lama, Tarif yang terjangkau, Berada di Pondok Gede, Bekasi" />
+    <meta property="og:image" content="https://img.lovepik.com/element/40132/3240.png_300.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="Jasa, Service, Rakha Cell, Rakha Cellular, Service HP" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/Logo/logo-red-heart.png" />
+    <link rel="stylesheet" type="text/css" href="/src/Components/config/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/src/Components/config/slick-1.8.1/slick/slick-theme.css" />
+    <title>Rakha Cellular - Service Cepat, Tepat, dan Terbaik</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"
+      integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/src/Components/config/slick-1.8.1/slick/slick.js"></script>
+    <script id="dot-template" type="text/template">
+      <button class="slick-dot"></button>
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".slick-carousel").slick({
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 3900,
+          dots: true,
+          customPaging: function (slider, i) {
+            var dotTemplate = $("#dot-template").html();
+            return dotTemplate;
+          },
+          pauseOnHover: false,
+        });
+
+        // Animasi di Nav
+        // Posisi Scroll
+        let scrollPosition = 0;
+        // Ukuran Lebar layar
+        let width = screen.width;
+        // Event scroll Pada window
+        window.addEventListener("scroll", function () {
+          if (width > 575.98) {
+            if (scrollPosition > this.scrollY) {
+              $("nav").css("top", "0");
+              $(".nav-service").css("top", "0");
+            } else {
+              $("nav").css("top", "-100px");
+              $(".nav-service").css("top", "-150px");
+            }
+            scrollPosition = this.scrollY;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

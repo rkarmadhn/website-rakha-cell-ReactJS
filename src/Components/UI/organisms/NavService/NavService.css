@@ -1,0 +1,50 @@
+.head-text {
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+.head-text a {
+  font-size: 1rem;
+  color: #6c757d;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.head-text a:hover {
+  color: rgb(61, 106, 255);
+}
+
+@media (max-width: 575.98px) {
+  .nav-service {
+    padding: 0.75rem 0;
+    overflow: scroll;
+    background-color: #eaeaea;
+    position: fixed;
+    width: 100%;
+    top: 57.5px;
+    z-index: 1020;
+  }
+  .nav-service .head-text {
+    width: max-content;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .head-text {
+    background-color: #eaeaea;
+    width: 100%;
+  }
+  .nav-service {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9000;
+    transition: all 0.5s;
+  }
+  .nav-service .head-text {
+    padding-top: 65px;
+  }
+  .nav-service .head-text a {
+    padding: 1rem 0;
+  }
+}/*# sourceMappingURL=NavService.css.map */

@@ -1,0 +1,191 @@
+@media (max-width: 575.98px) {
+  main {
+    padding-top: 5rem;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  main {
+    padding-top: 5rem;
+    min-height: 100vh;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+/* Large devices (desktops, 992px and up) */
+@keyframes fades {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main * {
+  color: #212121;
+  margin: 0;
+}
+main .wrapper-side-menu .wrap {
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem 0;
+  transition: all 1s;
+}
+main .wrapper-side-menu .button-reset {
+  display: none;
+}
+main .wrapper-side-menu .button-reset h5 {
+  color: red;
+}
+main .wrapper-side-menu ul {
+  padding: 0;
+  cursor: pointer;
+  transition: all 1s;
+}
+main .wrapper-side-menu ul li {
+  color: #6c757d;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #eaeaea;
+  list-style: none;
+  transition: all 0.75s;
+}
+main .wrapper-side-menu ul li:hover {
+  background-color: #f2f2fe;
+}
+main .card {
+  margin: 0.5rem 0;
+  animation: fades 0.5s ease-in;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+main .card .card-text {
+  border-radius: 1rem 1rem 0 0;
+}
+main .card .card-text .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .card .card-text .wrap * {
+  color: #212121;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 575.98px) {
+  .container-fluid {
+    padding: 0 0.5rem;
+  }
+  .container-fluid .side-menu {
+    padding: 0;
+  }
+  .container-fluid .col-6 {
+    padding: 0.25rem;
+  }
+  .container-fluid .col-6 .card {
+    border: none;
+  }
+  .container-fluid .col-6 .card .card-images {
+    padding: 0.5rem;
+  }
+  .container-fluid .col-6 .card .card-images img {
+    max-height: 150px;
+  }
+  .container-fluid .col-6 .card .card-text {
+    padding: 0.5rem;
+  }
+  .container-fluid .col-6 .card .card-text p {
+    font-size: 12px;
+  }
+  .btn-filter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1019;
+    margin: 0;
+    padding: 0.75rem 0.25rem;
+    background-color: #fafafa;
+    border-radius: 2rem 2rem 0 0;
+    transition: all 1s;
+  }
+  .btn-filter .label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .btn-filter .label * {
+    font-size: 1rem;
+    color: #212121;
+  }
+  .filter {
+    position: fixed;
+    background-color: #fafafa;
+    bottom: -500px;
+    width: 100%;
+    z-index: 1020;
+    border-radius: 2rem 2rem 0 0;
+    padding: 1rem;
+    margin: 0;
+    transition: all 1s;
+  }
+  .filter .label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .filter .label i {
+    font-size: 1.5rem;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  main .btn-filter {
+    display: none;
+  }
+  main .side-menu {
+    padding: 0.5rem;
+  }
+  main .side-menu .close-filter {
+    display: none;
+  }
+  main .card {
+    border: 1px solid #acacac;
+    border-radius: 1rem;
+  }
+  main .card .card-images {
+    padding: 0.5rem;
+  }
+  main .card .card-images img {
+    min-height: 184.99px;
+    max-height: 185px;
+  }
+  main .card .card-text {
+    padding: 0.5rem;
+  }
+  main .card .card-text .wrap {
+    border-bottom: 1px solid #212121;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .card-images img {
+    object-fit: contain;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .col-lg-9 {
+    padding: 0 1.5rem;
+    border-left: 1px solid #eaeaea;
+  }
+}
+@keyframes fades {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=service-iphone-page.css.map */

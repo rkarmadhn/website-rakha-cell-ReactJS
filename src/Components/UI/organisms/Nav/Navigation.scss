@@ -1,0 +1,40 @@
+.navbar-brand a {
+  font-size: 20px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  transition: all 0.5s;
+}
+
+@media (max-width: 628px) {
+  .navbar-items {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    color: #212121;
+    transition: all 0.5s;
+  }
+  .navbar-items.show {
+    left: 0;
+  }
+  .nav-wrap {
+    padding: 0 1.5rem;
+  }
+  .navbar-items a {
+    display: block;
+    font-size: 20px;
+    padding: 1rem 0;
+  }
+  .navlinks {
+    color: #818181;
+    border-bottom: 1px solid #818181;
+  }
+}

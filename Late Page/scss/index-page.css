@@ -1,0 +1,73 @@
+body a, body a:hover {
+  color: #fff;
+}
+
+.col-lg-6 {
+  padding: 0.5rem;
+}
+
+.card {
+  border: none;
+  position: relative;
+}
+.card .card-floating-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 94.25%;
+  height: 94.5%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: unset;
+  right: unset;
+  bottom: 2.75%;
+  left: 2.9%;
+  border-radius: 0.5rem 0.5rem;
+  padding: 0.5rem;
+}
+
+.hero-section {
+  position: relative;
+}
+
+.about-section {
+  margin-bottom: 0.25rem;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  body {
+    padding-top: 4rem;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  /* Card */
+  .images-card {
+    height: 100vh;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .banner .banner-text h1 {
+    font-weight: 900;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@keyframes moving {
+  0%, 100% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+}/*# sourceMappingURL=index-page.css.map */
