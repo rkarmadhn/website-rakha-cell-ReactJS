@@ -9,17 +9,17 @@ export default function ServiceSection() {
       <Banner className="md:w-1/2 w-full banner-android">
         <div className="text-center">
           <h1 className="md:text-4xl text-2xl font-bold text-white">Service Android</h1>
-          <Link to="/service/android/samsung" className="text-white">
+          <a href="/service/android/samsung" className="text-white">
             Selanjutnya
-          </Link>
+          </a>
         </div>
       </Banner>
       <Banner className="md:w-1/2 w-full banner-iphone">
         <div className="text-center">
           <h1 className="md:text-4xl text-2xl font-bold text-white">Service iPhone</h1>
-          <Link target="_blank" rel="noopener noreferrer" className="text-white">
+          <a className="text-white">
             Selanjutnya
-          </Link>
+          </a>
         </div>
       </Banner>
     </Containers>

@@ -6,7 +6,7 @@ export default function Cards(props) {
   return (
     <div {...props} className="border-2 border-stone-200 rounded-xl shadow-xl p-3">
       <div className="py-2">
-        <img src={props.src} alt="" className="w-full md:min-h-[255px] md:max-h-[255px] min-h-[155px] max-h-[155px]" />
+        <img src={props.src} alt="" className="w-full md:min-h-[185px] md:max-h-[185px] min-h-[155px] max-h-[155px]" />
       </div>
       <div className="py-2">
         <div className="flex justify-between">

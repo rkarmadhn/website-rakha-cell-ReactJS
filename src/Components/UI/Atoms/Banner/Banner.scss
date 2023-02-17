@@ -23,8 +23,8 @@
   background-size: contain !important;
 }
 /* Tentang Kami Section */
-.banner-tentang-kami{
-  background-image: url('/src/assets/Images/about-section.jpg');
+.banner-tentang-kami {
+  background-image: url("/src/assets/Images/about-section.jpg");
 }
 // End ..
 
@@ -61,13 +61,15 @@
   position: relative;
   padding: 0;
 }
-.slick-dots li button::before{
-  content: '';
+.slick-dots li button::before {
+  content: "";
 }
 .slick-dots .slick-active .slick-dot::before {
   content: "";
   position: absolute;
-  background: #000;
+  background: linear-gradient(120deg, #a2a2a2 30%, #fdfdff 38%, #fdfdff 40%, #a2a2a2 48%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
   top: 0;
   left: 0;
   width: 100%;
@@ -93,5 +95,6 @@
   }
   100% {
     width: 100%;
+    background-position: -100% 0;
   }
 }
