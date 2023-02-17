@@ -19,7 +19,7 @@ export default function Home() {
           <LoadingHomePage />
         </div>
       ) : (
-        <div className="homePage">
+        <div className="homePage fade">
           <Navigation />
           <HeroSection />
           <ServiceSection />
