@@ -9,7 +9,7 @@ body {
   padding-top: 4.5rem;
 }
 .homePage{
-  animation: fade 2s;
+  animation: fade 2s ease-in 1;
 }
 @media (max-width : 1023.98px) {
   .homePage{
