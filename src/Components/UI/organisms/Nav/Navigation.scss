@@ -5,10 +5,15 @@
 nav {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   z-index: 99999;
   transition: all 0.5s;
+}
+.scrollup{
+  top: 0;
+}
+.scrolldown{
+  top: -150px;
 }
 
 @media (max-width: 628px) {

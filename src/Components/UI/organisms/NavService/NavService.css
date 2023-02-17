@@ -47,4 +47,10 @@
   .nav-service .head-text a {
     padding: 1rem 0;
   }
+  .scrollup {
+    top: 0;
+  }
+  .scrolldown {
+    top: -150px;
+  }
 }/*# sourceMappingURL=NavService.css.map */

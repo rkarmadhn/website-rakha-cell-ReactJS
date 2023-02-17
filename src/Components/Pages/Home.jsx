@@ -6,7 +6,7 @@ import Navigation from '../UI/organisms/Nav/Navigation'
 
 export default function Home() {
   return (
-    <div className="homePage" id="Page">
+    <div className="homePage">
       <Navigation />
       <HeroSection />
       <ServiceSection />
