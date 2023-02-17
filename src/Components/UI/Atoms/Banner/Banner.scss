@@ -37,7 +37,6 @@
   display: flex !important;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -61,6 +60,9 @@
   background-color: rgba(255, 255, 255, 0.5);
   position: relative;
   padding: 0;
+}
+.slick-dots li button::before{
+  content: '';
 }
 .slick-dots .slick-active .slick-dot::before {
   content: "";
