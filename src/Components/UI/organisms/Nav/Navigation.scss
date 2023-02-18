@@ -1,7 +1,6 @@
 .navbar-brand a {
   font-size: 20px;
 }
-
 nav {
   position: fixed;
   top: 0;
@@ -9,45 +8,44 @@ nav {
   z-index: 99999;
   transition: all 0.5s;
 }
-.scrollup{
+.scrollup {
   top: 0;
 }
-.scrolldown{
+.scrolldown {
   top: -150px;
 }
 
 @media (max-width: 628px) {
-  nav{
+  nav {
     background-color: #eee;
-    *{
-      color: #00ADB5;
+    * {
+      color: #00adb5;
     }
-    .navbar-items{
-      background-color: #eee;
+    .navbar-items {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100vh;
+      transition: all 0.5s;
+      background-color: #f2f2fe;
+      .navhead {
+        background-color: #eee;
+      }
+      a {
+        display: block;
+        font-size: 20px;
+        padding: 1rem 0;
+      }
+      .navlinks {
+        border-bottom: 1px solid #00adb5;
+      }
+      .nav-wrap {
+        padding: 0 1.5rem;
+      }
     }
-  }
-  .navbar-items {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100vh;
-    color: #212121;
-    transition: all 0.5s;
   }
   .navbar-items.show {
     left: 0;
-  }
-  .nav-wrap {
-    padding: 0 1.5rem;
-  }
-  .navbar-items a {
-    display: block;
-    font-size: 20px;
-    padding: 1rem 0;
-    color: #818181;
-  }
-  .navlinks {
-    border-bottom: 1px solid #00ADB5;
   }
 }
