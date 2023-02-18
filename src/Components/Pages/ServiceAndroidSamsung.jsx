@@ -7,10 +7,10 @@ import NavService from "../UI/organisms/NavService/NavService";
 
 export default function ServiceAndroidSamsung() {
   return (
-    <div id="Page">
+    <div className="py-[7rem] md:pt-[8.5rem]">
       <Navigation />
       <NavService />
-      <Containers className="py-[4rem] px-2 md:flex">
+      <Containers className="px-2 md:flex">
         <Filter links="/service/android/samsung/filter/2016" />
         <CardSection />
       </Containers>
