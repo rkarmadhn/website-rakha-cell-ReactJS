@@ -5,7 +5,6 @@
 }
 .head-text a {
   font-size: 1rem;
-  color: #818181;
   margin: 0;
   cursor: pointer;
   transition: all 0.5s;
@@ -28,6 +27,9 @@
     padding-top: 0.25rem;
     width: max-content;
   }
+  .nav-service .head-text a {
+    color: #00ADB5;
+  }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -46,6 +48,7 @@
     padding-top: 65px;
   }
   .nav-service .head-text a {
+    color: #818181;
     padding: 1rem 0;
   }
   .scrollup {

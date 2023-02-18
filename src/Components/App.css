@@ -8,20 +8,23 @@ body {
 #Page {
   padding-top: 4.5rem;
 }
-.fade{
+.fade {
   animation: fade 1s ease-in 1;
 }
-@media (max-width : 1023.98px) {
-  .homePage{
+@media (max-width: 1023.98px) {
+  body {
+    background-color: #eee;
+  }
+  .homePage {
     padding-top: 4rem;
   }
 }
 
 @keyframes fade {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
