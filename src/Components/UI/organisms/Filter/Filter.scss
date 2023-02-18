@@ -17,14 +17,13 @@
   }
   .sort-filter{
     position: fixed;
-    right: 2%;
+    right: 7.5%;
     display: flex;
     justify-content: right;
     transition: all 1s ease;
     svg{
         width: 2.25rem;
         height: 2.25rem;
-        color: #212121;
     }
 }
     .sort-filter.show{
