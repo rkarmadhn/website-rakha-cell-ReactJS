@@ -53,7 +53,7 @@ const Navigation = () => {
             </button>
           </div>
           <div className="nav-wrap sm:gap-x-4 sm:flex">
-            <a href="" className="navlinks">
+            <a href="/" className="navlinks">
               Home
             </a>
             <a to="/about" className="navlinks">
