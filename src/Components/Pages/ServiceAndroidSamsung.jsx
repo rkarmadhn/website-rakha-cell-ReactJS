@@ -7,7 +7,7 @@ import NavService from "../UI/organisms/NavService/NavService";
 
 export default function ServiceAndroidSamsung() {
   return (
-    <div className="py-[7rem] md:pt-[8.5rem]">
+    <div className="pt-[7.5rem] pb-8 md:pt-[8.5rem]">
       <Navigation />
       <NavService />
       <Containers className="px-2 md:flex">
