@@ -24,7 +24,7 @@
     transition: all 1s ease;
   }
   .sort-filter.show {
-    bottom: 5%;
+    bottom: 0;
   }
   .sort-filter.no_show {
     bottom: -25%;
