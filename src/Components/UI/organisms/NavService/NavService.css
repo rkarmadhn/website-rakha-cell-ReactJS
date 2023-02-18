@@ -25,6 +25,7 @@
     z-index: 1020;
   }
   .nav-service .head-text {
+    padding-top: 0.25rem;
     width: max-content;
   }
 }
@@ -42,7 +43,7 @@
     transition: all 0.5s;
   }
   .nav-service .head-text {
-    padding-top: 75px;
+    padding-top: 65px;
   }
   .nav-service .head-text a {
     padding: 1rem 0;

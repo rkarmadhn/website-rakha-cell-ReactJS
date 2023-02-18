@@ -38,15 +38,15 @@ const Navigation = () => {
   }, [width, scrollPosition]);
 
   return (
-    <nav className={`bg-white text-neutral-700 shadow-lg ${isDown ? 'scrollup' : 'scrolldown'}`} >
+    <nav className={`md:bg-white md:text-neutral-700 shadow-lg ${isDown ? 'scrollup' : 'scrolldown'}`} >
       <Containers className={"flex justify-between items-center md:px-8 p-4"}>
         <div className="navbar-brand">
-          <a href="/">Logo</a>
+          <a href="/"></a>
         </div>
         <div className={`navbar-items md:flex md:items-center md:gap-x-3 ${show ? "show" : ""}`}>
           <div className="flex justify-between items-center sm:hidden shadow-lg navhead px-5">
             <div className="navbar-brand">
-              <a href="/">Logo</a>
+              <a href="/">3</a>
             </div>
             <button onClick={handleNav}>
               <IconX className="w-8 h-8" />

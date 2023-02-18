@@ -23,6 +23,7 @@
     top: 57.5px;
     z-index: 1020;
     .head-text {
+      padding-top: .25rem;
       width: max-content;
     }
   }
@@ -41,7 +42,7 @@
     z-index: 9000;
     transition: all 0.5s;
     .head-text {
-      padding-top: 75px;
+      padding-top: 65px;
       a {
         padding: 1rem 0;
       }
