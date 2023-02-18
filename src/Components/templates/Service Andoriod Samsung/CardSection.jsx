@@ -6,7 +6,7 @@ export default function CardSection() {
   const data = JSON.samsung;
 
   return (
-    <div className="w-full border-l border-stone-200 px-4">
+    <div className="w-full md:border-l md:border-stone-200 md:px-4">
       <h5 className="text-2xl pb-3">
         Menampilkan <span className="text-green-400">{data.length}</span> Item
       </h5>

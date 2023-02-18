@@ -8,9 +8,9 @@ import Navigation from "../UI/organisms/Nav/Navigation";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   
-    // setTimeout(() => {
-    //   setIsLoading(false);
-    // }, 1800);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1800);
   return (
     <Fragment>
       {isLoading ? (
