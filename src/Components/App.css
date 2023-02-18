@@ -12,7 +12,7 @@ body {
   animation: fade 1s ease-in 1;
 }
 @media (max-width: 1023.98px) {
-  body {
+  body, #serviceSection {
     background-color: #eee;
   }
   .homePage {
