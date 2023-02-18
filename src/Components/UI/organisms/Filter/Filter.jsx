@@ -15,7 +15,10 @@ export default function Filter(props) {
   return (
     <Fragment>
       <div className={`w-full sort-filter md:hidden ${isFilter ? "no_show" : "show"}`}>
-        <IconAdjustmentsHorizontal onClick={handleFilter} className={"text-neutral-400 dark:text-sky-400"}/>
+        <div className="flex items-center gap-x-2 text-xl text-neutral-800 dark:text-white border-2 border-neutral-700 px-4 py-1 rounded-full shadow-md shadow-neutral-400" onClick={handleFilter}>
+          <p>Sort</p>
+          <IconAdjustmentsHorizontal/>
+        </div>
       </div>
       <div className={`side-menu px-2 ${isFilter ? "show" : "no_show"}`}>
         <div className="label">

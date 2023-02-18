@@ -23,12 +23,8 @@
     align-items: center;
     transition: all 1s ease;
   }
-  .sort-filter svg {
-    width: 2.25rem;
-    height: 2.25rem;
-  }
   .sort-filter.show {
-    bottom: 5%;
+    bottom: 7.5%;
   }
   .sort-filter.no_show {
     bottom: -25%;
