@@ -17,9 +17,10 @@
   }
   .sort-filter {
     position: fixed;
-    right: 7.5%;
+    left: 0;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
     transition: all 1s ease;
   }
   .sort-filter svg {
