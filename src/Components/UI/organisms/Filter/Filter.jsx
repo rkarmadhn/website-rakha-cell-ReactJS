@@ -15,7 +15,7 @@ export default function Filter(props) {
   return (
     <Fragment>
       <div className={`w-full sort-filter md:hidden ${isFilter ? "no_show" : "show"}`}>
-        <div className="flex items-center gap-x-2 text-xl" onClick={handleFilter}>
+        <div className="flex items-center gap-x-2 text-md" onClick={handleFilter}>
           <p>Sort</p>
           <IconAdjustmentsHorizontal/>
         </div>

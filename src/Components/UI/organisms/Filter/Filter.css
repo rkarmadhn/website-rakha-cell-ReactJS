@@ -23,7 +23,7 @@
     transition: all 1s ease;
   }
   .sort-filter .flex {
-    background-color: #f2f2fe;
+    background-color: #eee !important;
     padding: 0.25rem 1rem;
     border-radius: 9999px;
     color: #00ADB5;

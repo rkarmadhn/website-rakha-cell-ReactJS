@@ -2,7 +2,7 @@
   width: 100vw;
   display: grid;
   place-content: center;
-  background: #eaeaea;
+  background: #eaeaea !important;
   box-shadow: 0 0.125rem 1rem rgba(0, 0, 0, 0.2);
   position: relative;
   padding: 12px 10px;
@@ -10,7 +10,7 @@
 .card .card_load {
   width: 100vw;
   position: absolute;
-  background: linear-gradient(120deg, #e5e5e5 30%, #fdfdff 38%, #fdfdff 40%, #e5e5e5 48%);
+  background: linear-gradient(120deg, #e5e5e5 30%, #fdfdff 38%, #fdfdff 40%, #e5e5e5 48%) !important;
   background-size: 200% 100%;
   background-position: 100% 0;
   animation: load89234 2s infinite;
@@ -23,7 +23,7 @@
   width: 75px;
   height: 4px;
   border-radius: 10px;
-  background: linear-gradient(120deg, #a2a2a2 30%, #fdfdff 38%, #fdfdff 40%, #a2a2a2 48%);
+  background: linear-gradient(120deg, #a2a2a2 30%, #fdfdff 38%, #fdfdff 40%, #a2a2a2 48%) !important;
   background-size: 200% 100%;
   background-position: 100% 0;
   animation: load89234 2s infinite;
@@ -31,7 +31,7 @@
 
 .card_load_2nd {
   height: 50vh;
-  background: linear-gradient(120deg, #e5e5e5 30%, #fdfdff 38%, #fdfdff 40%, #e5e5e5 48%);
+  background: linear-gradient(120deg, #e5e5e5 30%, #fdfdff 38%, #fdfdff 40%, #e5e5e5 48%) !important;
   background-size: 200% 100%;
   background-position: 100% 0;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
