@@ -22,7 +22,7 @@ export default function CardSection() {
           <LoadCard />
         </div>
       ) : (
-        <div className="grid md:grid-cols-3 grid-cols-2 gap-x-2 gap-y-4">
+        <div className="grid md:grid-cols-3 grid-cols-2 gap-4">
           {data.map((el, index) => {
             return <Cards brand={JSON.nama_brand} src={el.images} tahun={el.tahun} seri={el.nama_seri} harga_lcd={el.harga_lcd === "" ? "Belum Tersedia" : el.harga_lcd} key={index} />;
           })}
