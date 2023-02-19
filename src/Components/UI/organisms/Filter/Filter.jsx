@@ -34,27 +34,7 @@ export default function Filter(props) {
           </h5>
           {isOpen ? (
             <div className="">
-              <Link to={props.links2022} className="block hover:bg-stone-200 py-2 border-b border-stone-200">
-                2022
-              </Link>
-              <Link to={props.links2021} className="block hover:bg-stone-200 py-2 border-b border-stone-200">
-                2021
-              </Link>
-              <Link to={props.links2020} className="block hover:bg-stone-200 py-2 border-b border-stone-200">
-                2020
-              </Link>
-              <Link to={props.links2019} className="block hover:bg-stone-200 py-2 border-b border-stone-200">
-                2019
-              </Link>
-              <Link to={props.links2018} className="block hover:bg-stone-200 py-2 border-b border-stone-200">
-                2018
-              </Link>
-              <Link to={props.links2017} className="block hover:bg-stone-200 py-2 border-b border-stone-200">
-                2017
-              </Link>
-              <Link to={props.links2016} className="block hover:bg-stone-200 py-2 border-b border-stone-200">
-                2016
-              </Link>
+              {props.children}
               <Link className="py-2 text-red-600">{props.reset}</Link>
             </div>
           ) : (

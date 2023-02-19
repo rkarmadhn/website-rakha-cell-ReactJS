@@ -18,9 +18,9 @@ body {
   #serviceSection {
     background-color: #eee;
   }
-  .homePage {
-    padding-top: 4rem;
-  }
+}
+.homePage {
+  padding-top: 3.5rem;
 }
 
 @keyframes fade {
