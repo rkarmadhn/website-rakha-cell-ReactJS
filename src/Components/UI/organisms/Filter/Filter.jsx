@@ -20,7 +20,7 @@ export default function Filter(props) {
           <IconAdjustmentsHorizontal/>
         </div>
       </div>
-      <div className={`side-menu text-stone-500 px-2 ${isFilter ? "show" : "no_show"}`}>
+      <div className={`side-menu text-neutral-600 p-4 ${isFilter ? "show" : "no_show"}`}>
         <div className="label">
           <h1 className="w-full text-3xl  font-bold inline-flex justify-between items-center md:block">
             Filter
