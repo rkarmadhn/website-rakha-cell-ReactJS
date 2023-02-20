@@ -34,7 +34,7 @@ export default function NavService() {
   return (
     <div className={`nav-service shadow-md ${isDown ? 'scrollup' : 'scrolldown'}`}>
       <div className="head-text">
-        <Link to="/" relative="path">
+        <Link to="/service/iphone" relative="path">
           Iphone
         </Link>
         <Link to="/service/android/samsung" relative="path">

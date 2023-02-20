@@ -1,6 +1,5 @@
 import { IconAdjustmentsHorizontal, IconCircleChevronsDown, IconCircleChevronsUp, IconX } from "@tabler/icons-react";
 import React, { Fragment, useState } from "react";
-import { Link } from "react-router-dom";
 import "./Filter.css";
 
 export default function Filter(props) {
@@ -12,6 +11,7 @@ export default function Filter(props) {
   function handleFilter() {
     setIsFilter(!isFilter);
   }
+
   return (
     <Fragment>
       <div className={`w-full sort-filter md:hidden ${isFilter ? "no_show" : "show"}`}>
@@ -33,7 +33,7 @@ export default function Filter(props) {
             {isOpen ? <IconCircleChevronsUp className="w-8 h-8" /> : <IconCircleChevronsDown className="w-8 h-8" />}
           </h5>
           {isOpen ? (
-            <div className="">
+            <div className="" onClick={handleFilter}>
               {props.children}
             </div>
           ) : (
