@@ -1,5 +1,6 @@
 import { IconAlignCenter, IconX } from "@tabler/icons-react";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Containers from "../../Atoms/Containers/Containers";
 import "./Navigation.css";
 
@@ -23,11 +24,11 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (width > 575.98) {
+      if (width > 639.98) {
         if (scrollPosition > window.scrollY) {
-          setIsDown(true)
+          setIsDown(true);
         } else {
-          setIsDown(false)
+          setIsDown(false);
         }
         setScrollPosition(window.scrollY);
       }
@@ -38,13 +39,13 @@ const Navigation = () => {
   }, [width, scrollPosition]);
 
   return (
-    <nav className={`md:bg-white md:text-neutral-700 shadow-lg ${isDown ? 'scrollup' : 'scrolldown'}`} >
-      <Containers className={"flex justify-between items-center md:px-8 p-4"}>
+    <nav className={`shadow-md ${isDown ? 'scrollup' : 'scrolldown'}`}>
+      <Containers className={"flex justify-between items-center sm:px-8 sm:py-4"}>
         <div className="navbar-brand">
           <a href="/"></a>
         </div>
-        <div className={`navbar-items md:flex md:items-center md:gap-x-3 ${show ? "show" : ""}`}>
-          <div className="flex justify-between items-center sm:hidden shadow-lg navhead px-5">
+        <div className={`navbar-items sm:flex sm:items-center sm:gap-x-3 ${show ? "show" : ""}`}>
+          <div className="flex justify-between items-center sm:hidden shadow-lg navhead">
             <div className="navbar-brand">
               <a href="/">3</a>
             </div>
@@ -53,15 +54,15 @@ const Navigation = () => {
             </button>
           </div>
           <div className="nav-wrap sm:gap-x-4 sm:flex">
-            <a href="/" className="navlinks">
+            <Link to='/' className="navlinks">
               Home
-            </a>
-            <a to="/about" className="navlinks">
+            </Link>
+            <Link to="/" className="navlinks">
               About Us
-            </a>
+            </Link>
           </div>
         </div>
-        <div className="navbar-button md:hidden flex justify-center items-center">
+        <div className="navbar-button">
           <button onClick={handleNav}>
             <IconAlignCenter className="w-8 h-8" />
           </button>

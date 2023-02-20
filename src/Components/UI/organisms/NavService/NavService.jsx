@@ -18,7 +18,7 @@ export default function NavService() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (width > 575.98) {
+      if (width > 639.98) {
         if (scrollPosition > window.scrollY) {
           setIsDown(true);
         } else {
@@ -34,25 +34,25 @@ export default function NavService() {
   return (
     <div className={`nav-service shadow-md ${isDown ? 'scrollup' : 'scrolldown'}`}>
       <div className="head-text">
-        <Link to="" relative="path">
+        <Link to="/" relative="path">
           Iphone
         </Link>
         <Link to="/service/android/samsung" relative="path">
           Samsung
         </Link>
-        <Link to="/service/android/oppo" relative="path">
+        <Link to="/" relative="path">
           Oppo
         </Link>
-        <Link to="" relative="path">
+        <Link to="/" relative="path">
           Vivo
         </Link>
-        <Link to="" relative="path">
+        <Link to="/" relative="path">
           Realme
         </Link>
-        <Link to="" relative="path">
+        <Link to="/" relative="path">
           Pocophone
         </Link>
-        <Link to="" relative="path">
+        <Link to="/" relative="path">
           Xiaomi
         </Link>
       </div>

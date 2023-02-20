@@ -14,12 +14,12 @@ export default function Home() {
   return (
     <Fragment>
       {isLoading ? (
-        <div className="homePage">
+        <div className="lg:pt-0 md:pt-[3.5rem] pt-[4.25rem]">
           <Navigation />
           <LoadingHomePage />
         </div>
       ) : (
-        <div className="homePage fade">
+        <div className="lg:pt-0 md:pt-[3.5rem] pt-[4.25rem]">
           <Navigation />
           <HeroSection />
           <ServiceSection />

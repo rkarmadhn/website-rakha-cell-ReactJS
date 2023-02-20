@@ -4,7 +4,7 @@ import PlatCard from '../../Atoms/PlatCard/PlatCard'
 
 export default function Cards(props) {
   return (
-    <div {...props} className="bg-white dark dark:bg-white dark:text-white rounded-xl shadow-sm shadow-neutral-400 p-3">
+    <div {...props} className="bg-white dark dark:bg-white dark:text-white rounded-xl shadow-sm shadow-neutral-400 p-3 fade">
       <div className="py-2">
         <img src={props.src} alt="" className="w-full md:min-h-[185px] md:max-h-[185px] min-h-[155px] max-h-[155px] object-contain" />
       </div>

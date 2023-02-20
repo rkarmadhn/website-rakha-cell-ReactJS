@@ -1,40 +1,41 @@
-.head-text {
+.nav-service {
+  background-color: #fff !important;
+}
+.nav-service .head-text {
   display: flex;
   gap: 1rem;
   padding: 0 1rem;
 }
-.head-text a {
+.nav-service .head-text a {
   font-size: 1rem;
   margin: 0;
   cursor: pointer;
   transition: all 0.5s;
+  color: #00adb5;
 }
-.head-text a:hover {
+.nav-service .head-text a:hover {
   color: rgb(61, 106, 255);
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 639.99px) {
   .nav-service {
-    padding: 0.75rem 0;
+    padding-top: 1rem;
     overflow: scroll;
-    background-color: #fff !important;
     position: fixed;
     width: 100%;
     top: 57.5px;
     z-index: 1020;
   }
   .nav-service .head-text {
-    padding-top: 0.25rem;
     width: max-content;
   }
   .nav-service .head-text a {
-    color: #00ADB5;
+    padding: 0.5rem 0;
   }
 }
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .head-text {
-    background-color: #eaeaea;
     width: 100%;
   }
   .nav-service {
@@ -43,13 +44,13 @@
     width: 100%;
     z-index: 9000;
     transition: all 0.5s;
+    padding-top: 3.5rem;
   }
   .nav-service .head-text {
-    padding-top: 65px;
+    width: max-content;
   }
   .nav-service .head-text a {
-    color: #818181;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
   }
   .scrollup {
     top: 0;

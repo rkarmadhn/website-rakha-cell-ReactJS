@@ -20,7 +20,7 @@ export default function Filter(props) {
           <IconAdjustmentsHorizontal/>
         </div>
       </div>
-      <div className={`side-menu text-neutral-600 p-4 ${isFilter ? "show" : "no_show"}`}>
+      <div className={`side-menu text-neutral-600 p-4 md:p-0 md:pr-2 ${isFilter ? "show" : "no_show"}`}>
         <div className="label">
           <h1 className="w-full text-3xl  font-bold inline-flex justify-between items-center md:block">
             Filter
@@ -35,7 +35,6 @@ export default function Filter(props) {
           {isOpen ? (
             <div className="">
               {props.children}
-              <Link className="py-2 text-red-600">{props.reset}</Link>
             </div>
           ) : (
             ""

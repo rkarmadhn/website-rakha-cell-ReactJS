@@ -7,20 +7,12 @@ body {
   font-family: "Inter", sans-serif;
   box-sizing: border-box;
 }
-#Page {
-  padding-top: 4.5rem;
-}
 .fade {
   animation: fade 1s ease-in 1;
 }
-@media (max-width: 1023.98px) {
-  body,
-  #serviceSection {
-    background-color: #eee;
-  }
-}
-.homePage {
-  padding-top: 3.5rem;
+body,
+#serviceSection {
+  background-color: #eee;
 }
 
 @keyframes fade {

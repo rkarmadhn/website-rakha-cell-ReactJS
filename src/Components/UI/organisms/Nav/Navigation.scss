@@ -7,20 +7,17 @@ nav {
   width: 100%;
   z-index: 99999;
   transition: all 0.5s;
-}
-.scrollup {
-  top: 0;
-}
-.scrolldown {
-  top: -150px;
+  background-color: #eee;
+  * {
+    color: #00adb5;
+  }
 }
 
-@media (max-width: 628px) {
+@media (max-width: 639.98px) {
+  nav{
+    padding: 1rem .5rem;
+  }
   nav {
-    background-color: #eee;
-    * {
-      color: #00adb5;
-    }
     .navbar-items {
       position: fixed;
       top: 0;
@@ -31,6 +28,7 @@ nav {
       background-color: #fff !important;
       .navhead {
         background-color: #eee;
+        padding: 4px 8px;
       }
       a {
         display: block;
@@ -47,5 +45,17 @@ nav {
   }
   .navbar-items.show {
     left: 0;
+  }
+}
+
+@media (min-width : 640px) {
+  .navbar-button{
+    display: none;
+  }
+  nav.scrollup {
+    top: 0;
+  }
+  nav.scrolldown {
+    top: -150px;
   }
 }

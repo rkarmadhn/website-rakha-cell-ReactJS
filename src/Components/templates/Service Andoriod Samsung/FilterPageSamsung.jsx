@@ -12,6 +12,7 @@ export default function FilterPageSamsung() {
       <Link to="/service/android/samsung/sort/years/2018" className="block hover:bg-stone-200 py-2 border-b border-stone-200">2018</Link>
       <Link to="/service/android/samsung/sort/years/2017" className="block hover:bg-stone-200 py-2 border-b border-stone-200">2017</Link>
       <Link to="/service/android/samsung/sort/years/2016" className="block hover:bg-stone-200 py-2 border-b border-stone-200">2016</Link>
+      <Link to='/service/android/samsung' className="block hover:bg-rose-200 py-2 text-red-600">Reset</Link>
     </Filter>
   );
 }

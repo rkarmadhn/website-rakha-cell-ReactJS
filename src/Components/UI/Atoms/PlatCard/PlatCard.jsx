@@ -3,6 +3,6 @@ import React from 'react'
 
 export default function PlatCard(props) {
   return (
-    <div {...props} className={clsx(props.className,'grid gap-2 md:flex md:justify-between py-2')}>{props.children}</div>
+    <div {...props} className={clsx(props.className,'grid gap-2 lg:flex lg:justify-between py-2')}>{props.children}</div>
   )
 }
