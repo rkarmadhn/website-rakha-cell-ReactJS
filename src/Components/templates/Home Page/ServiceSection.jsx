@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Banner from "../../UI/Atoms/Banner/Banner";
 import Containers from "../../UI/Atoms/Containers/Containers";
 
@@ -17,7 +16,7 @@ export default function ServiceSection() {
       <Banner className="md:w-1/2 w-full banner-iphone">
         <div className="text-center">
           <h1 className="md:text-4xl text-2xl font-bold text-white">Service iPhone</h1>
-          <a className="text-white">
+          <a href='/service/iphone' className="text-white">
             Selanjutnya
           </a>
         </div>
