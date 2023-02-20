@@ -19,11 +19,11 @@
 
 @media (max-width: 639.99px) {
   .nav-service {
-    padding-top: 1rem;
+    padding-top: 4rem;
     overflow: scroll;
     position: fixed;
     width: 100%;
-    top: 57.5px;
+    top: 0;
     z-index: 1020;
   }
   .nav-service .head-text {
