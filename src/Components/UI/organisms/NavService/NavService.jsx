@@ -40,7 +40,7 @@ export default function NavService() {
         <Link to="/service/android/samsung" relative="path">
           Samsung
         </Link>
-        <Link to="/" relative="path">
+        <Link to="/service/android/oppo" relative="path">
           Oppo
         </Link>
         <Link to="/" relative="path">

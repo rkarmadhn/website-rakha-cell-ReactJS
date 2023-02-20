@@ -62,7 +62,7 @@ const Navigation = () => {
             </Link>
           </div>
         </div>
-        <div className="navbar-button">
+        <div className="navbar-button flex items-center">
           <button onClick={handleNav}>
             <IconAlignCenter className="w-8 h-8" />
           </button>
