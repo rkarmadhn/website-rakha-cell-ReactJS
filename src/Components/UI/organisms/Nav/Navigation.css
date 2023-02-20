@@ -29,7 +29,7 @@ nav * {
   }
   nav .navbar-items .navhead {
     background-color: #eee;
-    padding: 4px 8px;
+    padding: 1px 8px;
   }
   nav .navbar-items a {
     display: block;
@@ -40,7 +40,7 @@ nav * {
     border-bottom: 1px solid #00adb5;
   }
   nav .navbar-items .nav-wrap {
-    padding: 0 1.5rem;
+    padding: 0 0.75rem;
   }
   .navbar-items.show {
     left: 0;

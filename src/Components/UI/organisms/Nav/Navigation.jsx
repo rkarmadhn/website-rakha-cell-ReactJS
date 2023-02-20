@@ -49,8 +49,8 @@ const Navigation = () => {
             <div className="navbar-brand">
               <a href="/">3</a>
             </div>
-            <button onClick={handleNav}>
-              <IconX className="w-8 h-8" />
+            <button onClick={handleNav} className='focus:ring-2 focus:ring-stone-300 focus:rounded-md p-1'>
+              <IconX className="w-5 h-5" />
             </button>
           </div>
           <div className="nav-wrap sm:gap-x-4 sm:flex">
@@ -63,8 +63,8 @@ const Navigation = () => {
           </div>
         </div>
         <div className="navbar-button flex items-center">
-          <button onClick={handleNav}>
-            <IconAlignCenter className="w-8 h-8" />
+          <button onClick={handleNav} className='focus:ring-2 focus:ring-stone-300 focus:rounded-md p-1'>
+            <IconAlignCenter className="w-5 h-5" />
           </button>
         </div>
       </Containers>

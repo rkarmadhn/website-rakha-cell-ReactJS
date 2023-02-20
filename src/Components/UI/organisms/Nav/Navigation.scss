@@ -14,10 +14,12 @@ nav {
 }
 
 @media (max-width: 639.98px) {
-  nav{
-    padding: 1rem .5rem;
-  }
+  // nav, .navhead{
+  //   max-height: 64px;
+  // }
+  
   nav {
+    padding: 1rem .5rem;
     .navbar-items {
       position: fixed;
       top: 0;
@@ -28,7 +30,7 @@ nav {
       background-color: #fff !important;
       .navhead {
         background-color: #eee;
-        padding: 4px 8px;
+        padding: 1px 8px;
       }
       a {
         display: block;
@@ -39,7 +41,7 @@ nav {
         border-bottom: 1px solid #00adb5;
       }
       .nav-wrap {
-        padding: 0 1.5rem;
+        padding: 0 .75rem;
       }
     }
   }
