@@ -43,7 +43,7 @@ export default function NavService() {
         <Link to="/service/android/oppo" relative="path">
           Oppo
         </Link>
-        <Link to="/" relative="path">
+        <Link to="/service/android/vivo" relative="path">
           Vivo
         </Link>
         <Link to="/" relative="path">

@@ -6,6 +6,7 @@ import ServiceAndroidSamsung from "./Pages/ServiceAndroidSamsung";
 import ServiceIphone from './Pages/ServiceIphone'
 import ServiceAndroidOppo from "./Pages/ServiceAndroidOppo";
 import ServiceAndroidXiaomi from './Pages/ServiceAndroidXiaomi'
+import ServiceAndroidVivo from './Pages/ServiceAndroidVivo'
 
 export default function App() {
   return (
@@ -44,6 +45,14 @@ export default function App() {
         <Route path="/service/android/xiaomi/sort/years/2018" element={<ServiceAndroidXiaomi years="2018" />} />
         <Route path="/service/android/xiaomi/sort/years/2017" element={<ServiceAndroidXiaomi years="2017" />} />
         <Route path="/service/android/xiaomi/sort/years/2016" element={<ServiceAndroidXiaomi years="2016" />} />
+        <Route path="/service/android/vivo" element={<ServiceAndroidVivo />} />
+        <Route path="/service/android/vivo/sort/years/2022" element={<ServiceAndroidVivo years="2022" />} />
+        <Route path="/service/android/vivo/sort/years/2021" element={<ServiceAndroidVivo years="2021" />} />
+        <Route path="/service/android/vivo/sort/years/2020" element={<ServiceAndroidVivo years="2020" />} />
+        <Route path="/service/android/vivo/sort/years/2019" element={<ServiceAndroidVivo years="2019" />} />
+        <Route path="/service/android/vivo/sort/years/2018" element={<ServiceAndroidVivo years="2018" />} />
+        <Route path="/service/android/vivo/sort/years/2017" element={<ServiceAndroidVivo years="2017" />} />
+        <Route path="/service/android/vivo/sort/years/2016" element={<ServiceAndroidVivo years="2016" />} />
       </Routes>
     </BrowserRouter>
   );
