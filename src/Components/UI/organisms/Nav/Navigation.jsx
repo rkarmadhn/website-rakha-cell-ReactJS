@@ -39,7 +39,7 @@ const Navigation = () => {
   }, [width, scrollPosition]);
 
   return (
-    <nav className={`shadow-md ${isDown ? 'scrollup' : 'scrolldown'}`}>
+    <nav className={`dark:bg-stone-900 dark:text-white shadow-md ${isDown ? "scrollup" : "scrolldown"}`}>
       <Containers className={"flex justify-between items-center sm:px-8 sm:py-4"}>
         <div className="navbar-brand">
           <a href="/"></a>
@@ -54,11 +54,17 @@ const Navigation = () => {
             </button>
           </div>
           <div className="nav-wrap sm:gap-x-4 sm:flex">
-            <Link to='/' className="navlinks">
+            <Link to="/" className="navlinks">
               Home
             </Link>
             <Link to="/" className="navlinks">
-              About Us
+              Tentang Kami
+            </Link>
+            <Link to="/service/iphone" className="navlinks">
+              Harga
+            </Link>
+            <Link to='/' className="navlinks">
+              Lokasi
             </Link>
           </div>
         </div>
