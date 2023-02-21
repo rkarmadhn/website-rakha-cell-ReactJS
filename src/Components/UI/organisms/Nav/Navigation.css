@@ -15,6 +15,10 @@ nav * {
 }
 
 @media (max-width: 639.98px) {
+  nav, .navhead {
+    min-height: 64px;
+    max-height: 64px;
+  }
   nav {
     padding: 1rem 0.5rem;
   }
