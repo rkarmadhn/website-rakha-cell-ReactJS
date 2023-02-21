@@ -39,7 +39,7 @@ const Navigation = () => {
   }, [width, scrollPosition]);
 
   return (
-    <nav className={`dark:bg-stone-900 dark:text-white shadow-md ${isDown ? "scrollup" : "scrolldown"}`}>
+    <nav className={`shadow-md ${isDown ? "scrollup" : "scrolldown"}`}>
       <Containers className={"flex justify-between items-center sm:px-8 sm:py-4"}>
         <div className="navbar-brand">
           <a href="/"></a>
