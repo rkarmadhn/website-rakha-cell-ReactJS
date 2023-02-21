@@ -52,7 +52,7 @@ export default function NavService() {
         <Link to="/" relative="path">
           Pocophone
         </Link>
-        <Link to="/" relative="path">
+        <Link to="/service/android/xiaomi" relative="path">
           Xiaomi
         </Link>
       </div>

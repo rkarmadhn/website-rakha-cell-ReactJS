@@ -1,6 +1,6 @@
 import React from "react";
-import CardSection from "../templates/Service Android Samsung/CardSection";
-import FilterPageSamsung from "../templates/Service Android Samsung/FilterPageSamsung";
+import CardSection from "../templates/Service Android Xiaomi/CardSection";
+import FilterPageXiaomi from "../templates/Service Android Xiaomi/FilterPageXiaomi";
 import Containers from "../UI/Atoms/Containers/Containers";
 import Navigation from "../UI/organisms/Nav/Navigation";
 import NavService from "../UI/organisms/NavService/NavService";
@@ -11,8 +11,8 @@ export default function ServiceAndroidSamsung(props) {
       <Navigation />
       <NavService />
       <Containers className="px-2 md:flex">
-        <FilterPageSamsung />
-        <CardSection years={props.years}/>
+        <FilterPageXiaomi />
+        <CardSection years={props.years} />
       </Containers>
     </div>
   );
