@@ -7,7 +7,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <Containers className="bg-neutral-700 grid place-content-center gap-y-2 py-4 mt-2 text-center">
+    <Containers className="bg-black grid place-content-center gap-y-2 py-4 mt-2 text-center">
       <h2 className="text-xl font-bold">Service</h2>
       <PlaceContentCenter className="gap-2 md:gap-4">
         <Link to="/service/iphone" relative="path">

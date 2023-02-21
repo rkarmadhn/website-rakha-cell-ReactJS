@@ -33,7 +33,7 @@ nav * {
   }
   nav .navbar-items a {
     display: block;
-    font-size: 20px;
+    font-size: 16px;
     padding: 1rem 0;
   }
   nav .navbar-items .navlinks {
