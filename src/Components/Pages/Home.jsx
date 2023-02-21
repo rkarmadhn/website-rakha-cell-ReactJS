@@ -3,14 +3,15 @@ import HeroSection from "../templates/Home Page/HeroSection";
 import ServiceSection from "../templates/Home Page/ServiceSection";
 import TentangKamiSection from "../templates/Home Page/TentangKamiSection";
 import LoadingHomePage from "../templates/Loading/LoadingHomePage";
+import Footer from "../UI/organisms/Footer/Footer";
 import Navigation from "../UI/organisms/Nav/Navigation";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
-  
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1800);
+
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 1800);
   return (
     <Fragment>
       {isLoading ? (
@@ -24,6 +25,7 @@ export default function Home() {
           <HeroSection />
           <ServiceSection />
           <TentangKamiSection />
+          <Footer />
         </div>
       )}
     </Fragment>
