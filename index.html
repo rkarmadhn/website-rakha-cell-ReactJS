@@ -16,11 +16,7 @@
     <link rel="stylesheet" type="text/css" href="/src/Components/config/slick-1.8.1/slick/slick-theme.css" />
     <title>Rakha Cellular - Service Cepat, Tepat, dan Terbaik</title>
     <script>
-      if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-        document.documentElement.classList.remove("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
+      localStorage.removeItem("theme");
     </script>
   </head>
   <body>
