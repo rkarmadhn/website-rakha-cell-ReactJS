@@ -1,0 +1,29 @@
+.card-comment {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  min-height: 379px;
+  max-height: 379px;
+  border-radius: 0.8rem;
+  .card-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 56px;
+      height: 56px;
+      border-radius: 9999px;
+    }
+  }
+  .card-body{
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+    .card-body-text{
+        max-height: 12rem;
+        overflow-y: scroll;
+    }
+  }
+}
+
