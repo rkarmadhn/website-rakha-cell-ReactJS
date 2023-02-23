@@ -13,7 +13,7 @@
 .input-helper {
   color: #275efe;
   font-size: 14px;
-  margin-top: 6px;
+  margin-top: .5rem;
   margin-left: 1px;
   visibility: hidden;
   transform: translateY(-0.5rem);
@@ -51,8 +51,7 @@
 .btn-cssbuttons {
   --btn-color: #275efe;
   position: relative;
-  padding: 16px 32px;
-  font-family: Roboto, sans-serif;
+  padding: 8px 32px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
