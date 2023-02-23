@@ -1,5 +1,4 @@
 .card {
-  width: 100vw;
   display: grid;
   place-content: center;
   background: #eaeaea !important;
@@ -7,7 +6,6 @@
   position: relative;
   padding: 12px 10px;
   .card_load {
-    width: 100vw;
     position: absolute;
     background: linear-gradient(120deg, #e5e5e5 30%, #fdfdff 38%, #fdfdff 40%, #e5e5e5 48%);
     background-size: 200% 100%;

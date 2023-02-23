@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react";
+import CommentSection from "../templates/Home Page/CommentSection";
 import HeroSection from "../templates/Home Page/HeroSection";
 import ServiceSection from "../templates/Home Page/ServiceSection";
 import TentangKamiSection from "../templates/Home Page/TentangKamiSection";
@@ -25,6 +26,7 @@ export default function Home() {
           <HeroSection />
           <ServiceSection />
           <TentangKamiSection />
+          <CommentSection />
           <Footer />
         </div>
       )}

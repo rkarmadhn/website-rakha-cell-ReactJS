@@ -6,7 +6,7 @@ export default function LoadingHomePage() {
     <div>
       <div className="card">
         <div className="card_load"></div>
-        <div className="w-screen z-50 flex justify-center gap-4 card-bar-load">
+        <div className="z-50 flex justify-center gap-4 card-bar-load w-full">
           <div className="card_load_extreme_title"></div>
           <div className="card_load_extreme_title"></div>
         </div>

@@ -40,7 +40,7 @@ const Navigation = () => {
 
   return (
     <nav className={`shadow-md ${isDown ? "scrollup" : "scrolldown"}`}>
-      <Containers className={"flex justify-between items-center sm:px-8 sm:py-4"}>
+      <div className={"flex justify-between items-center sm:px-8 sm:py-4"}>
         <div className="navbar-brand">
           <a href="/"></a>
         </div>
@@ -73,7 +73,7 @@ const Navigation = () => {
             <IconAlignCenter className="w-8 h-8" />
           </button>
         </div>
-      </Containers>
+      </div>
     </nav>
   );
 };
