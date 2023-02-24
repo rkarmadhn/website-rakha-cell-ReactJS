@@ -4,7 +4,7 @@ import "./FormComment.scss";
 export default function FormComment() {
   return (
     <div className="flex justify-center items-center">
-      <div className="grid gap-2 p-6 rounded-lg bg-neutral-300 min-h-[379px] max-h-[379px]">
+      <div className="grid md:gap-2 p-6 rounded-lg bg-neutral-300 min-h-[379px] max-h-[379px]">
         <h4 className="text-xl text-center">Review</h4>
         <div className="input-box">
           <input placeholder="Masukan nama anda" className="input" name="name" type="text"/>
