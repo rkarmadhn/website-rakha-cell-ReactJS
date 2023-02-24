@@ -37,8 +37,7 @@ export default function Filter(props) {
               {props.children}
             </div>
           ) : (
-            <div className="list-filter-no-show" onClick={handleFilter}>
-            </div>
+            <div className="list-filter-no-show" onClick={handleFilter}></div>
           )}
         </div>
         <div className="py-2">

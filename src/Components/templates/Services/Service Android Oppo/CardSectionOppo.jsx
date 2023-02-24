@@ -1,10 +1,10 @@
-import React, { Fragment, useEffect, useState } from "react";
-import Cards from "../../UI/organisms/Card/Cards";
-import JSON from "../../config/json-page/android-type-samsung.json";
-import LoadCard from "../../UI/organisms/Card/Loader/LoadCard";
+import React, { useState } from "react";
+import Cards from "../../../UI/organisms/Card/Cards";
+import JSON from "../../../config/json-page/android-type-oppo.json";
+import LoadCard from "../../../UI/organisms/LoadingCard/LoadCard";
 
 export default function CardSection(props) {
-  const data = JSON.samsung;
+  const data = JSON.oppo;
   const map = data.filter((e) => e.tahun == props.years);
   const [isLoading, setIsLoading] = useState(true);
 

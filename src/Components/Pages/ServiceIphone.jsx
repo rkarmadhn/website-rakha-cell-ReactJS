@@ -1,9 +1,10 @@
 import React from "react";
-import CardSectionIphone from "../templates/Service Iphone/CardSectionIphone";
-import FilterPageIphone from "../templates/Service Iphone/FilterPageIphone";
+import CardSectionIphone from "../templates/Services/Service Iphone/CardSectionIphone";
+import FilterPageIphone from "../templates/Services/Service Iphone/FilterPageIphone";
+
 import Containers from "../UI/Atoms/Containers/Containers";
 import Navigation from "../UI/organisms/Nav/Navigation";
-import NavService from "../UI/organisms/NavService/NavService";
+import NavService from "../UI/organisms/Nav/NavService/NavService";
 
 export default function ServiceIphone(props) {
   return (

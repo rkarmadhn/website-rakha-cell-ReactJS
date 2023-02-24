@@ -1,0 +1,78 @@
+.form-review-section {
+  svg {
+    position: fixed;
+    background-color: #eee;
+    color: #212121;
+    border-radius: 9999px;
+    padding: 0.5rem;
+    z-index: 9999;
+    cursor: pointer;
+  }
+  svg,
+  .form-comment {
+    transition: all 0.75s ease-in-out;
+  }
+  .form-comment {
+    position: fixed;
+  }
+}
+
+@media (max-width : 766.98px) {
+  .form-review-section {
+    svg {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    .icon-show.showed {
+      bottom: 1.5rem;
+      right: .75rem;
+    }
+    .showed {
+      .tabler-icon-x {
+        right: 0;
+        bottom: 22.5rem;
+      }
+      .form-comment {
+        bottom: .5rem;
+        left: 1.5rem;
+        right: 1.5rem;
+      }
+    }
+    .icon-show.no_showed,
+    .no_showed .tabler-icon-x,
+    .no_showed .form-comment {
+      bottom: -100%;
+      left: -100%;
+      right: 100%;
+    }
+  } 
+}
+
+@media (min-width: 767px) {
+  .form-review-section {
+    svg {
+      width: 3rem;
+      height: 3rem;
+    }
+    .icon-show.showed {
+      bottom: 1.5rem;
+      right: 2rem;
+    }
+    .showed {
+      .tabler-icon-x {
+        right: 1rem;
+        bottom: 23.5rem;
+      }
+      .form-comment {
+        bottom: 1.5rem;
+        right: 2rem;
+      }
+    }
+    .icon-show.no_showed,
+    .no_showed .tabler-icon-x,
+    .no_showed .form-comment {
+      bottom: -100%;
+      right: 2rem;
+    }
+  }
+}

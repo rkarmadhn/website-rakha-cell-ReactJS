@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Filter from "../../UI/organisms/Filter/Filter";
+import Filter from "../../../UI/organisms/Filter/Filter";
 
 export default function FilterPageVivo() {
   return (

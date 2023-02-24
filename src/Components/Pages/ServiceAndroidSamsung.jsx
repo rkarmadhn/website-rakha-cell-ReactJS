@@ -1,9 +1,9 @@
 import React from "react";
-import CardSection from "../templates/Service Android Samsung/CardSection";
-import FilterPageSamsung from "../templates/Service Android Samsung/FilterPageSamsung";
+import CardSection from "../templates/Services/Service Android Samsung/CardSection";
+import FilterPageSamsung from "../templates/Services/Service Android Samsung/FilterPageSamsung";
 import Containers from "../UI/Atoms/Containers/Containers";
 import Navigation from "../UI/organisms/Nav/Navigation";
-import NavService from "../UI/organisms/NavService/NavService";
+import NavService from "../UI/organisms/Nav/NavService/NavService";
 
 export default function ServiceAndroidSamsung(props) {
   return (

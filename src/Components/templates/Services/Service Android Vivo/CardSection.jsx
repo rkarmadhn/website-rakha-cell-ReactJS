@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import Cards from "../../UI/organisms/Card/Cards";
-import JSON from "../../config/json-page/android-type-oppo.json";
-import LoadCard from "../../UI/organisms/Card/Loader/LoadCard";
+import React, { Fragment, useEffect, useState } from "react";
+import Cards from "../../../UI/organisms/Card/Cards";
+import JSON from "../../../config/json-page/android-type-vivo.json";
+import LoadCard from "../../../UI/organisms/LoadingCard/LoadCard";
 
 export default function CardSection(props) {
-  const data = JSON.oppo;
+  const data = JSON.vivo;
   const map = data.filter((e) => e.tahun == props.years);
   const [isLoading, setIsLoading] = useState(true);
 

@@ -5,7 +5,7 @@
     border: none;
     box-shadow: 0px 1.5px 0px 0px #858585;
     padding: 0.5rem;
-    transition: all .5s;
+    transition: all 0.5s;
     opacity: 0.75;
   }
   .input::placeholder {
@@ -26,12 +26,10 @@
   outline: none;
   overflow: hidden;
   cursor: pointer;
-  filter: drop-shadow(0 .25rem .5rem rgba(39, 94, 254, 0.32));
+  filter: drop-shadow(0 0.25rem 0.5rem rgba(39, 94, 254, 0.32));
 }
-
-@media (max-width : 767.98px) {
+@media (max-width: 767.98px) {
   .input-box {
     margin: 1rem 0;
   }
 }
-

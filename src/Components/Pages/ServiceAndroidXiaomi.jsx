@@ -1,9 +1,10 @@
 import React from "react";
-import CardSection from "../templates/Service Android Xiaomi/CardSection";
-import FilterPageXiaomi from "../templates/Service Android Xiaomi/FilterPageXiaomi";
+import CardSection from "../templates/Services/Service Android Xiaomi/CardSection";
+import FilterPageXiaomi from "../templates/Services/Service Android Xiaomi/FilterPageXiaomi";
+
 import Containers from "../UI/Atoms/Containers/Containers";
 import Navigation from "../UI/organisms/Nav/Navigation";
-import NavService from "../UI/organisms/NavService/NavService";
+import NavService from "../UI/organisms/Nav/NavService/NavService";
 
 export default function ServiceAndroidSamsung(props) {
   return (

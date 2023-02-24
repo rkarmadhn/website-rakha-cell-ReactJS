@@ -1,9 +1,9 @@
 import React from "react";
-import CardSectionOppo from "../templates/Service Android Oppo/CardSectionOppo";
-import FilterPageOppo from "../templates/Service Android Oppo/FilterPageOppo";
+import CardSectionOppo from "../templates/Services/Service Android Oppo/CardSectionOppo";
+import FilterPageOppo from "../templates/Services/Service Android Oppo/FilterPageOppo";
 import Containers from "../UI/Atoms/Containers/Containers";
 import Navigation from "../UI/organisms/Nav/Navigation";
-import NavService from "../UI/organisms/NavService/NavService";
+import NavService from "../UI/organisms/Nav/NavService/NavService";
 
 export default function ServiceOppo(props) {
   return (

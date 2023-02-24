@@ -1,10 +1,10 @@
 import React, { Fragment, useEffect, useState } from "react";
-import Cards from "../../UI/organisms/Card/Cards";
-import JSON from "../../config/json-page/android-type-vivo.json";
-import LoadCard from "../../UI/organisms/Card/Loader/LoadCard";
+import Cards from "../../../UI/organisms/Card/Cards";
+import JSON from "../../../config/json-page/android-type-samsung.json";
+import LoadCard from "../../../UI/organisms/LoadingCard/LoadCard";
 
 export default function CardSection(props) {
-  const data = JSON.vivo;
+  const data = JSON.samsung;
   const map = data.filter((e) => e.tahun == props.years);
   const [isLoading, setIsLoading] = useState(true);
 

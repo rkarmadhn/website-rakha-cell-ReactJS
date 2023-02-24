@@ -1,5 +1,5 @@
 import React from "react";
-import PlatCard from "../../../Atoms/PlatCard/PlatCard";
+import PlatCard from "../../Atoms/PlatCard/PlatCard";
 import "./LoadCard.css";
 
 export default function Cards() {

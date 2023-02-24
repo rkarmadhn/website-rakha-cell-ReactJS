@@ -1,10 +1,10 @@
 import React, { Fragment, useEffect, useState } from "react";
-import Cards from "../../UI/organisms/Card/Cards";
-import JSON from "../../config/json-page/iPhone-type.json";
-import LoadCard from "../../UI/organisms/Card/Loader/LoadCard";
+import Cards from "../../../UI/organisms/Card/Cards";
+import JSON from "../../../config/json-page/android-type-xiaomi.json";
+import LoadCard from "../../../UI/organisms/LoadingCard/LoadCard";
 
 export default function CardSection(props) {
-  const data = JSON.iphone;
+  const data = JSON.xiaomi;
   const map = data.filter((e) => e.tahun == props.years);
   const [isLoading, setIsLoading] = useState(true);
 

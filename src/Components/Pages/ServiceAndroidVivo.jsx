@@ -1,9 +1,9 @@
 import React from "react";
-import CardSection from "../templates/Service Android Vivo/CardSection";
-import FilterPageVivo from "../templates/Service Android Vivo/FilterPageVivo";
+import CardSection from "../templates/Services/Service Android Vivo/CardSection";
+import FilterPageVivo from "../templates/Services/Service Android Vivo/FilterPageVivo";
 import Containers from "../UI/Atoms/Containers/Containers";
 import Navigation from "../UI/organisms/Nav/Navigation";
-import NavService from "../UI/organisms/NavService/NavService";
+import NavService from "../UI/organisms/Nav/NavService/NavService";
 
 export default function ServiceAndroidVivo(props) {
   return (
