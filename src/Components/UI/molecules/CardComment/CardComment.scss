@@ -8,10 +8,8 @@
   .card-body-text {
     display: flex;
     align-items: center;
-    width: 100%;
     min-height: 8rem;
     max-height: 8rem;
-    overflow-y: scroll;
   }
   .card-body-text::-webkit-scrollbar {
     width: 0;
