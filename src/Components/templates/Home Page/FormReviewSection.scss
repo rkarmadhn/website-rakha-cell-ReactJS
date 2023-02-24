@@ -17,37 +17,6 @@
   }
 }
 
-@media (max-width : 766.98px) {
-  .form-review-section {
-    svg {
-      width: 2.5rem;
-      height: 2.5rem;
-    }
-    .icon-show.showed {
-      bottom: 1.5rem;
-      right: .75rem;
-    }
-    .showed {
-      .tabler-icon-x {
-        right: 0;
-        bottom: 22.5rem;
-      }
-      .form-comment {
-        bottom: .5rem;
-        left: 1.5rem;
-        right: 1.5rem;
-      }
-    }
-    .icon-show.no_showed,
-    .no_showed .tabler-icon-x,
-    .no_showed .form-comment {
-      bottom: -100%;
-      left: -100%;
-      right: 100%;
-    }
-  } 
-}
-
 @media (min-width: 767px) {
   .form-review-section {
     svg {

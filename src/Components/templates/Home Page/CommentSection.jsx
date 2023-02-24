@@ -6,7 +6,7 @@ export default class CommentSection extends Component {
     const settings = {
       arrows: false,
       autoplay: true,
-      autoplaySpeed: 2500,
+      autoplaySpeed: 4000,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
