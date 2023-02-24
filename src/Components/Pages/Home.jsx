@@ -22,7 +22,7 @@ export default function Home() {
           <LoadingHomePage />
         </div>
       ) : (
-        <div className="pt-[4.25rem] lg:pt-0">
+        <div className="pt-[3.75rem] lg:pt-0">
           <Navigation />
           <HeroSection />
           <ServiceSection />
