@@ -23,7 +23,7 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (width > 639.98) {
+      if (width > 1024) {
         if (scrollPosition > window.scrollY) {
           setIsDown(true);
         } else {

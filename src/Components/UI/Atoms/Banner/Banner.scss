@@ -78,9 +78,14 @@
   animation: moving 3.7s ease-in-out 1;
 }
 
-@media (max-width: 1023.98px) {
+@media (max-width: 399.98px) {
   .banner {
     height: 50vh !important;
+  }
+}
+@media (max-width: 1024px) {
+  .banner {
+    height: 80vh;
   }
 }
 @media (min-width: 1024px) {
