@@ -17,6 +17,7 @@ export default class CommentSection extends Component {
     };
     return (
       <div className=" sm:grid sm:grid-cols-2 lg:grid-cols-3 py-8">
+        <FormComment />
         <Slider {...settings} className="slider-comment lg:col-span-2">
           <CardComment />
           <CardComment />
@@ -25,7 +26,6 @@ export default class CommentSection extends Component {
           <CardComment />
           <CardComment />
         </Slider>
-        <FormComment />
       </div>
     );
   }
