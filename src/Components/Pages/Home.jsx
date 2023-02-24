@@ -17,12 +17,12 @@ export default function Home() {
   return (
     <Fragment>
       {isLoading ? (
-        <div className="pt-[4.25rem] sm:pt-0">
+        <div className="pt-[4.25rem] lg:pt-0">
           <Navigation />
           <LoadingHomePage />
         </div>
       ) : (
-        <div className="pt-[4.25rem] sm:pt-0">
+        <div className="pt-[4.25rem] lg:pt-0">
           <Navigation />
           <HeroSection />
           <ServiceSection />
