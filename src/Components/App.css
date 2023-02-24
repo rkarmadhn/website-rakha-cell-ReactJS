@@ -6,19 +6,11 @@ html {
 body {
   font-family: "Inter", sans-serif;
   box-sizing: border-box;
-  background-color: #eee;
+  background-color: #fff;
 }
 
 .fade {
   animation: fade 1s ease-in 1;
-}
-::-webkit-scrollbar {
-  background-color: transparent;
-  width: .8rem;
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 99px;
-  background-color: #3f3f46;
 }
 
 @keyframes fade {

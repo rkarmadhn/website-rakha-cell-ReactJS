@@ -1,9 +1,9 @@
 import React from "react";
-import "./CardComment.css";
+import "./CardComment.scss";
 
 export default function CardComment() {
   return (
-    <div className="card-comment bg-neutral-300 shadow-lg shadow-stone-100">
+    <div className="card-comment bg-neutral-300 shadow-lg shadow-stone-100 lg:m-2 m-4">
       <div className="card-images">
         <img src="https://divedigital.id/wp-content/uploads/2021/10/1-min.png" alt="" />
       </div>

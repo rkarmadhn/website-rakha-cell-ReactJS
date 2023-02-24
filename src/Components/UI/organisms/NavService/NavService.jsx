@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./NavService.css";
+import "./NavService.scss";
 
 export default function NavService() {
   const [scrollPosition, setScrollPosition] = useState(0);

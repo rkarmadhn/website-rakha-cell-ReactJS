@@ -1,6 +1,6 @@
 import { IconAdjustmentsHorizontal, IconCircleChevronsDown, IconCircleChevronsUp, IconX } from "@tabler/icons-react";
 import React, { Fragment, useState } from "react";
-import "./Filter.css";
+import "./Filter.scss";
 
 export default function Filter(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,7 @@ export default function Filter(props) {
       <div className={`w-full sort-filter md:hidden ${isFilter ? "no_show" : "show"}`}>
         <div className="flex items-center gap-x-2 text-md" onClick={handleFilter}>
           <p>Sort</p>
-          <IconAdjustmentsHorizontal/>
+          <IconAdjustmentsHorizontal />
         </div>
       </div>
       <div className={`side-menu text-neutral-600 p-4 md:p-0 md:pr-2 ${isFilter ? "show" : "no_show"}`}>
@@ -33,11 +33,12 @@ export default function Filter(props) {
             {isOpen ? <IconCircleChevronsUp className="w-8 h-8" /> : <IconCircleChevronsDown className="w-8 h-8" />}
           </h5>
           {isOpen ? (
-            <div className="" onClick={handleFilter}>
+            <div className="list-filter-show" onClick={handleFilter}>
               {props.children}
             </div>
           ) : (
-            ""
+            <div className="list-filter-no-show" onClick={handleFilter}>
+            </div>
           )}
         </div>
         <div className="py-2">

@@ -1,8 +1,7 @@
 import { IconAlignCenter, IconX } from "@tabler/icons-react";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Containers from "../../Atoms/Containers/Containers";
-import "./Navigation.css";
+import "./Navigation.scss";
 
 const Navigation = () => {
   const [show, setShow] = useState(false);

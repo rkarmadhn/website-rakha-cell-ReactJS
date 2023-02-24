@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import React from "react";
-import "./Banner.css";
+import "./Banner.scss";
 
 export default function Banner(props) {
   const { children, className } = props;

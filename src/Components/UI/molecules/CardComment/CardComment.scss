@@ -2,7 +2,6 @@
   display: grid;
   gap: 1rem;
   padding: 1rem;
-  margin: 1rem;
   min-height: 379px;
   max-height: 379px;
   border-radius: 0.8rem;
@@ -23,6 +22,9 @@
     .card-body-text{
         max-height: 12rem;
         overflow-y: scroll;
+    }
+    .card-body-text::-webkit-scrollbar{
+      width: 0;
     }
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./FormComment.css";
+import "./FormComment.scss";
 
 export default function FormComment() {
   return (
