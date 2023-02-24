@@ -10,7 +10,7 @@ export default function FormComment() {
           <input placeholder="Masukan nama anda" className="input" name="name" type="text"/>
         </div>
         <div className="input-box">
-          <textarea name="body" id="body" cols="30" rows="5" placeholder="Masukan Kritik dan Saran" className="input"></textarea>
+          <textarea name="body" id="body" cols="30" rows="4" placeholder="Masukan Kritik dan Saran" className="input"></textarea>
         </div>
         <button className="btn-cssbuttons">
           <span className="tracking-widest">Kirim</span>
