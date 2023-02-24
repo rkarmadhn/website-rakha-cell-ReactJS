@@ -1,24 +1,37 @@
 .card-comment {
   padding: 1rem;
-  min-height: 214.98px;
-  max-height: 215px;
   border-radius: 0.8rem;
   cursor: pointer;
   gap: 0.75rem;
   .card-body-text {
     display: flex;
     align-items: center;
-    min-height: 8rem;
-    max-height: 8rem;
   }
   .card-body-text::-webkit-scrollbar {
     width: 0;
   }
 }
-
 .slick-center {
   .card-comment {
     background-color: #212121;
     color: #fff;
+  }
+}
+
+@media (max-width : 1024px) {
+  .card-comment{
+    min-height: 325px;
+    max-height: 325px;
+    .card-body-text{
+      min-height: 14rem;
+      max-height: 14rem;
+    }
+  }
+}
+
+@media (min-width : 1025px) {
+  .card-body-text{
+    min-height: 12rem;
+      max-height: 12rem;
   }
 }
