@@ -6,19 +6,29 @@ export default function NavbarBottom() {
   return (
     <div className="navbar_bottom">
       <div>
-        <IconCategory />
+        <button type="button" className="focus:text-neutral-400 hover:text-neutral-400">
+          <IconCategory />
+        </button>
       </div>
       <div>
-        <IconMailOpened />
-      </div>
-      <div className="index">
-        <IconHome />
-      </div>
-      <div>
-        <IconBrandWhatsapp />
+        <button type="button" className="focus:text-neutral-400 hover:text-neutral-400">
+          <IconMailOpened />
+        </button>
       </div>
       <div>
-        <IconMap />
+        <button type="button" className="index focus:text-neutral-400 hover:text-neutral-400">
+          <IconHome />
+        </button>
+      </div>
+      <div>
+        <button type="button" className="focus:text-neutral-400 hover:text-neutral-400">
+          <IconBrandWhatsapp />
+        </button>
+      </div>
+      <div>
+        <button type="button" className="focus:text-neutral-400 hover:text-neutral-400">
+          <IconMap />
+        </button>
       </div>
     </div>
   );

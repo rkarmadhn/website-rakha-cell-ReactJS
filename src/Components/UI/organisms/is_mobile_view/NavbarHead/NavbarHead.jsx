@@ -1,16 +1,18 @@
-import { IconAlignCenter, IconBellRinging, IconUserCircle } from "@tabler/icons-react";
+import { IconBellRinging, IconUserCircle } from "@tabler/icons-react";
 import React from "react";
-import './NavbarHead.scss'
+import "./NavbarHead.scss";
 
 export default function NavbarHead() {
   return (
     <div className="navbar_head shadow shadow-stone-200">
       <div className="is_icons">
-        <IconAlignCenter />
-      </div>
-      <div className="is_icons">
-        <IconBellRinging />
-        <IconUserCircle />
+        <button type="button" className="focus:text-neutral-400 hover:text-neutral-400">
+          <IconBellRinging />
+        </button>
+        
+        <button type="button" className="focus:text-neutral-400 hover:text-neutral-400">
+          <IconUserCircle />
+        </button>
       </div>
     </div>
   );
