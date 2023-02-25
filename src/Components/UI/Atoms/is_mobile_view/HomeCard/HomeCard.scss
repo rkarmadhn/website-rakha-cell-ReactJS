@@ -1,7 +1,7 @@
 @media (max-width: 640px) {
   .is_card_banner {
     width: 100%;
-    height: 225px;
+    height: 265px;
     position: relative;
     overflow: hidden;
     border-radius: 1rem;
@@ -29,7 +29,7 @@
       }
     }
   }
-  .is_card_banner:focus {
+  .is_card_banner:hover {
     img {
       filter: blur(1px);
       transform: scale(1.075);
