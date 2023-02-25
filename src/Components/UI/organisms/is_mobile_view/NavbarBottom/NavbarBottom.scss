@@ -3,7 +3,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1.25rem 1rem;
+        padding: 1rem;
         background-color: #f5f5f5;
         position: fixed;
         width: 100%;
@@ -19,12 +19,12 @@
         }
         svg{
             transition: all .5s;
-            width: 2rem;
-            height: 2rem;
+            width: 28px;
+            height: 28px;
         }
         .tabler-icon-home {
-            width: 2.5rem;
-            height: 2.5rem;
+            width: 34px;
+            height: 34px;
         }
         .index{
             padding: .5rem;
