@@ -28,55 +28,55 @@
 }
 // End ..
 
-/* SLICK CAROUSEL */
-.slick-carousel {
-  margin: 0 !important;
-  position: relative !important;
-}
-.slick-dots {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-decoration: none;
-  position: absolute;
-  top: unset;
-  right: 0;
-  bottom: 5%;
-  left: 0;
-}
-.slick-dots li {
-  width: 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.slick-dots li .slick-dot {
-  width: 100%;
-  height: 5px;
-  border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.5);
-  position: relative;
-  padding: 0;
-}
-.slick-dots li button::before {
-  content: "";
-}
-.slick-dots .slick-active .slick-dot::before {
-  content: "";
-  position: absolute;
-  background: linear-gradient(120deg, #a2a2a2 30%, #fdfdff 38%, #fdfdff 40%, #a2a2a2 48%);
-  background-size: 200% 100%;
-  background-position: 100% 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 30px;
-  animation: moving 3.7s ease-in-out 1;
-}
+// /* SLICK CAROUSEL */
+// .slick-carousel {
+//   margin: 0 !important;
+//   position: relative !important;
+// }
+// .slick-dots {
+//   display: flex !important;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 0;
+//   padding: 0;
+//   list-style-type: none;
+//   text-decoration: none;
+//   position: absolute;
+//   top: unset;
+//   right: 0;
+//   bottom: 5%;
+//   left: 0;
+// }
+// .slick-dots li {
+//   width: 75px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+// .slick-dots li .slick-dot {
+//   width: 100%;
+//   height: 5px;
+//   border-radius: 30px;
+//   background-color: rgba(255, 255, 255, 0.5);
+//   position: relative;
+//   padding: 0;
+// }
+// .slick-dots li button::before {
+//   content: "";
+// }
+// .slick-dots .slick-active .slick-dot::before {
+//   content: "";
+//   position: absolute;
+//   background: linear-gradient(120deg, #a2a2a2 30%, #fdfdff 38%, #fdfdff 40%, #a2a2a2 48%);
+//   background-size: 200% 100%;
+//   background-position: 100% 0;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 30px;
+//   animation: moving 3.7s ease-in-out 1;
+// }
 
 @media (max-width: 400px) {
   .banner {
@@ -94,12 +94,4 @@
   }
 }
 
-@keyframes moving {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-    background-position: -100% 0;
-  }
-}
+
