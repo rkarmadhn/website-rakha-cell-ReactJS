@@ -26,7 +26,7 @@ export const MainLayout = () => {
   return (
     <Fragment>
       {isMobile ? (
-        <div className="">
+        <div className="is_mobile">
           <NavbarHead />
           <Outlet />
           <NavbarBottom />

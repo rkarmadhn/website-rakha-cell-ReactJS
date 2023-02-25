@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   background-color: #fff;
   scroll-behavior: smooth;
+  min-height: 200vh;
 }
 
 .fade {

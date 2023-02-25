@@ -9,7 +9,7 @@ export default class HeroSection extends Component {
       autoplay: true,
       autoplaySpeed: 4000,
       dots: true,
-      pauseOnHover: false,
+      pauseOnHover: true,
       centerMode: true,
       centerPadding: "32px",
       customPaging: function () {

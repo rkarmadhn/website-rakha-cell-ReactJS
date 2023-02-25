@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Home from "./Pages/Home";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -17,8 +17,8 @@ export default function App() {
     },
   ]);
   return (
-    <div>
+    <Fragment>
       <RouterProvider router={router} />
-    </div>
+    </Fragment>
   );
 }
