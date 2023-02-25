@@ -1,9 +1,9 @@
 import React, { Fragment, useEffect, useState } from "react";
-import HeroSection from "../templates/Home Page/is_Mobile_view/Hero Section/HeroSection";
-import NavbarHead from "../UI/organisms/is_mobile_view/NavbarHead/NavbarHead";
-import NavbarBottom from '../UI/organisms/is_mobile_view/NavbarBottom/NavbarBottom'
+import { Outlet } from "react-router-dom";
+import NavbarBottom from "./UI/organisms/is_mobile_view/NavbarBottom/NavbarBottom";
+import NavbarHead from "./UI/organisms/is_mobile_view/NavbarHead/NavbarHead";
 
-export default function Home() {
+export const MainLayout = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isWidth, setIsWidth] = useState(window.innerWidth);
 
@@ -23,17 +23,19 @@ export default function Home() {
       setIsMobile(false);
     }
   }, [isWidth]);
-
-  console.log(isWidth);
   return (
     <Fragment>
       {isMobile ? (
         <div className="">
-          <HeroSection />
+          <NavbarHead />
+          <Outlet />
+          <NavbarBottom />
         </div>
       ) : (
-        ""
+        <div>
+          <Outlet />
+        </div>
       )}
     </Fragment>
   );
-}
+};

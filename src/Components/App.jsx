@@ -1,14 +1,24 @@
 import React from "react";
 import Home from "./Pages/Home";
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { MainLayout } from "./MainLayout";
+import About from "./Pages/About";
 
 export default function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <MainLayout />,
+      children: [
+        { path: "/", element: <Home /> },
+        { path: "/about", element: <About /> },
+      ],
+    },
+  ]);
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <RouterProvider router={router} />
+    </div>
   );
 }

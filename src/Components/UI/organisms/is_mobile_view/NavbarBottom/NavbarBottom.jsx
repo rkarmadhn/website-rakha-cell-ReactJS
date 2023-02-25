@@ -1,34 +1,35 @@
-import { IconBrandWhatsapp, IconCategory, IconHome, IconMailOpened, IconMap } from "@tabler/icons-react";
+import { IconBrandWhatsapp, IconCategory, IconHome, IconMailOpened, IconMapPin  } from "@tabler/icons-react";
 import React from "react";
+import { Link } from "react-router-dom";
 import "./NavbarBottom.scss";
 
 export default function NavbarBottom() {
   return (
     <div className="navbar_bottom">
       <div>
-        <button type="button">
+        <Link to='/about'>
           <IconCategory />
-        </button>
+        </Link>
       </div>
       <div>
-        <button type="button">
+        <Link to=''>
           <IconMailOpened />
-        </button>
+        </Link>
       </div>
       <div>
-        <button type="button" className="index">
+        <Link to='/' className="index">
           <IconHome />
-        </button>
+        </Link>
       </div>
       <div>
-        <button type="button">
+        <Link to=''>
           <IconBrandWhatsapp />
-        </button>
+        </Link>
       </div>
       <div>
-        <button type="button">
-          <IconMap />
-        </button>
+        <Link to=''>
+          <IconMapPin />
+        </Link>
       </div>
     </div>
   );
