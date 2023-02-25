@@ -7,7 +7,8 @@ import LoadingHomePage from "../templates/Loading/LoadingHomePage";
 import Navigation from "../UI/organisms/Nav/Navigation";
 import Footer from "../UI/molecules/Footer/Footer";
 import FormReviewSection from "../templates/Home Page/FormReviewSection";
-import NavbarHead from "../UI/organisms/Nav/NavbarHead/NavbarHead";
+import NavbarHead from "../UI/organisms/is_mobile_view/NavbarHead/NavbarHead";
+
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
