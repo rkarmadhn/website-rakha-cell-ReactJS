@@ -13,12 +13,12 @@ export default function ServiceIphoneSection() {
   };
   return (
     <div className="py-2">
-      <h5 className="text-xl font-bold italic m-4">Price Service Iphone</h5>
+      <h5 className="text-xl font-semibold italic text-center m-4" style={{color: '#404258'}}>Price Service Iphone</h5>
       <Slider {...HomeCardSettings}>
-        <div className="p-1">
+        <div className="px-2">
           <HomeCard />
         </div>
-        <div className="p-1">
+        <div className="px-2">
           <HomeCard />
         </div>
       </Slider>
