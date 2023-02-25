@@ -1,33 +1,40 @@
-import React, { Fragment, useState } from "react";
-import CommentSection from "../templates/Home Page/CommentSection";
+import React, { Fragment, useEffect, useState } from "react";
 import HeroSection from "../templates/Home Page/is_Mobile_view/Hero Section/HeroSection";
-import ServiceSection from "../templates/Home Page/ServiceSection";
-import TentangKamiSection from "../templates/Home Page/TentangKamiSection";
-import LoadingHomePage from "../templates/Loading/LoadingHomePage";
-import Navigation from "../UI/organisms/Nav/Navigation";
-import Footer from "../UI/molecules/Footer/Footer";
-import FormReviewSection from "../templates/Home Page/FormReviewSection";
 import NavbarHead from "../UI/organisms/is_mobile_view/NavbarHead/NavbarHead";
-
+import NavbarBottom from '../UI/organisms/is_mobile_view/NavbarBottom/NavbarBottom'
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isWidth, setIsWidth] = useState(window.innerWidth);
 
-  setTimeout(() => {
-    setIsLoading(false);
-  }, 1800);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (isWidth < 640) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  }, [isWidth]);
+
+  console.log(isWidth);
   return (
     <Fragment>
-      {isLoading ? (
-        <div className="pt-[4.25rem] lg:pt-0">
-          <Navigation />
-          <LoadingHomePage />
-        </div>
-      ) : (
+      {isMobile ? (
         <div className="">
           <NavbarHead />
+          <NavbarBottom />
           <HeroSection />
         </div>
+      ) : (
+        ""
       )}
     </Fragment>
   );

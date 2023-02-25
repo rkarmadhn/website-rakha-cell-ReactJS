@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import CardComment from "../../UI/molecules/CardComment/CardComment";
+import CardComment from "../../../UI/molecules/is_desktop_view/CardComment/CardComment";
 export default class CommentSection extends Component {
   render() {
     const settings = {
