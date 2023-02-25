@@ -7,11 +7,22 @@
     background-color: #f5f5f5;
     border-radius: 0 0 1.5rem 1.5rem;
     color: #404258;
+    box-shadow: 1px 1px 1rem rgba($color: #404258, $alpha: .25);
     .is_icons {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 0.5rem;
+      gap: 1rem;
+      button{
+        text-align: center;
+        svg{
+          width: 28px;
+          height: 28px;
+        }
+      }
+      button:focus{
+        color: #212121;
+      }
     }
   }
 }
