@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import Banners from "../../../../UI/Atoms/is_mobile_view/Banner/Banners";
+import Banners from "../../../../../UI/Atoms/is_mobile_view/Banner/Banners";
 
 export default class HeroSection extends Component {
   render() {
