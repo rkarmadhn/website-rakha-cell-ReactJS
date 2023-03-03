@@ -1,0 +1,29 @@
+.side-menus {
+  background-color: #eee;
+  height: 100%;
+  box-shadow: 1px 0 0.25rem rgba($color: #616161, $alpha: 0.25);
+  .logo-brand {
+    padding: 1rem;
+  }
+  .menus {
+    padding: 1rem 0;
+    display: grid;
+    color: #818181;
+    gap: 0.5rem;
+    p {
+      font-size: 12px;
+      padding: 0.25rem 1rem;
+    }
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.5rem 1rem;
+      transition: all 0.5s;
+    }
+    a:focus {
+      color: #414141;
+      background-color: rgba($color: #616161, $alpha: 0.25);
+    }
+  }
+}

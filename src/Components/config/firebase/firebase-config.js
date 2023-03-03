@@ -11,8 +11,6 @@ const firebaseConfig = {
   measurementId: "G-0Y4ZZK10TY",
 };
 
-const app = initializeApp(firebaseConfig, {
-  experimentalForceLongPolling: true, // this line
-  useFetchStreams: false, // and this line
-});
+const app = initializeApp(firebaseConfig);
+
 export const db = getFirestore(app);
