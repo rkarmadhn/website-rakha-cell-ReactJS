@@ -22,7 +22,6 @@ export default class HomeSlider extends Component {
           <SliderBanner className="banner_1" />
           <SliderBanner className="banner_2" />
         </Slider>
-        <p className="footer">Footer</p>
       </div>
     );
   }
