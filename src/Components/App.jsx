@@ -6,18 +6,20 @@ import { DashboardLayout } from "./Layout/DashboardLayout";
 import Signin from "./Pages/LoginAndRegister/Signin";
 import Signup from "./Pages/LoginAndRegister/Signup";
 import Account from "./Pages/Account";
-import HomePage from "./Pages/is_mobile_view/HomePage";
+import HomePage from "./Pages/HomePage";
 
 export default function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <MainLayout />,
-      children: [{ path: "/", element: <HomePage /> }],
-    },
-    {
-      path: "/dashboard-admin",
-      element: <DashboardLayout />,
+      children: [
+        { path: "/", element: <HomePage /> },
+        {
+          path: "/dashboard-admin",
+          element: <DashboardLayout />,
+        },
+      ],
     },
     {
       path: "/login",
@@ -26,10 +28,6 @@ export default function App() {
     {
       path: "/register",
       element: <Signup />,
-    },
-    {
-      path: "/account",
-      element: <Account />,
     },
   ]);
   return (

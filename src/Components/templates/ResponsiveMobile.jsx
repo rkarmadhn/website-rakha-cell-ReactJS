@@ -1,15 +1,13 @@
 import React, { Fragment, useEffect, useState } from "react";
-import HomeSlider from "../../UI/organisms/is_mobile_view/HomeSlider/HomeSlider";
-import RowKategori from "../../UI/organisms/is_mobile_view/rowKategori/RowKategori";
+import ResponsiveDesktop from "./ResponsiveDesktop";
 
-function HomePage() {
+export default function ResponsiveMobile(props) {
   const [isMobile, setIsMobile] = useState(false);
   const [isWidth, setIsWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => {
       setIsWidth(window.innerWidth);
-      console.log(window.innerWidth);
     };
 
     window.addEventListener("resize", handleResize);
@@ -23,18 +21,5 @@ function HomePage() {
       setIsMobile(false);
     }
   }, [isWidth]);
-  return (
-    <>
-      {isMobile ? (
-        <Fragment>
-          <HomeSlider />
-          <RowKategori />
-        </Fragment>
-      ) : (
-        ""
-      )}
-    </>
-  );
+  return <Fragment>{isMobile ? <div className="is_mobile">{props.children}</div> : <ResponsiveDesktop />}</Fragment>;
 }
-
-export default HomePage;

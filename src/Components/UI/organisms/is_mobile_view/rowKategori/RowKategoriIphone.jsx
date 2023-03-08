@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import MoreCard from "../../../Atoms/is_mobile_view/moreCards/MoreCard";
 import TitleRowKategori from "../../../Atoms/titleRowKategori/titleRowKategori";
 
-export default class RowKategori extends Component {
+export default class RowKategoriIphone extends Component {
   render() {
     const cardSettings = {
       arrows: false,
