@@ -5,7 +5,6 @@ import { MainLayout } from "./Layout/MainLayout";
 import { DashboardLayout } from "./Layout/DashboardLayout";
 import Signin from "./Pages/LoginAndRegister/Signin";
 import Signup from "./Pages/LoginAndRegister/Signup";
-import Account from "./Pages/Account";
 import HomePage from "./Pages/HomePage";
 
 export default function App() {
