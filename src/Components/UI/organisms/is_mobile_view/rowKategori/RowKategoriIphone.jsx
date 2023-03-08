@@ -8,17 +8,15 @@ export default class RowKategoriIphone extends Component {
     const cardSettings = {
       arrows: false,
       dots: false,
-      infinite: true,
+      infinite: false,
       speed: 500,
-      slidesToShow: 1,
+      slidesToShow: 2,
       slidesToScroll: 1,
-      centerMode: true,
-      centerPadding: "32px",
     };
     return (
       <>
         <TitleRowKategori text="Harga Service Iphone" />
-        <Slider {...cardSettings}>
+        <Slider {...cardSettings} className='slick_kategori'>
           <MoreCard />
           <MoreCard />
           <MoreCard />
