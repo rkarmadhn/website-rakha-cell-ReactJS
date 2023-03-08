@@ -20,14 +20,6 @@ export default function App() {
         },
       ],
     },
-    {
-      path: "/login",
-      element: <Signin />,
-    },
-    {
-      path: "/register",
-      element: <Signup />,
-    },
   ]);
   return (
     <Fragment>
