@@ -27,12 +27,12 @@ export default function Navigation() {
       </ResponsiveDesktop>
       <ResponsiveMobile>
         <div className={`navbar ${isOpen ? 'show' : ''}`}>
-          <div className="navbar-logo flex justify-between items-center shadow-md p-4" style={{ backgroundColor: "#40513B", color: "#EDF1D6" }}>
+          <div className="navbar-logo flex justify-between items-center shadow-lg p-4" style={{ backgroundColor: "#40513B", color: "#EDF1D6" }}>
             <Link>logo</Link>
             <IconAlignJustified onClick={handleOpen}/>
           </div>
           <div className="navbar-items">
-            <div className="navbar-items-head shadow-md">
+            <div className="navbar-items-head shadow-lg">
               <Link>logo</Link>
               <IconX onClick={handleOpen}/>
             </div>

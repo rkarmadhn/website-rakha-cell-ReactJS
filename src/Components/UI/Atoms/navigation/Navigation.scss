@@ -5,6 +5,12 @@
       transition: all 0.5s;
     }
   }
+  .navbar{
+    svg{
+      width: 28px;
+      height: 28px;
+    }
+  }
   .navbar-items {
     position: absolute;
     top: 0;
