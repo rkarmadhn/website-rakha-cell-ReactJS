@@ -21,5 +21,5 @@ export default function ResponsiveDesktop(props) {
       setIsMobile(false);
     }
   }, [isWidth]);
-  return <Fragment>{isMobile ? <ResponsiveMobile /> : <div className="is_desktop_view">{props.children}</div>}</Fragment>;
+  return <>{isMobile ? <></> : <div className="is_desktop">{props.children}</div>}</>;
 }

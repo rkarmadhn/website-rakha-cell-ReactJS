@@ -7,11 +7,6 @@ import RowKategoriSamsung from "../UI/organisms/is_mobile_view/rowKategori/RowKa
 function HomePage() {
   return (
     <>
-      <ResponsiveMobile>
-        <HomeSlider />
-        <RowKategoriIphone />
-        <RowKategoriSamsung />
-      </ResponsiveMobile>
     </>
   );
 }
