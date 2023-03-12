@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import React, { Fragment, useEffect, useState } from "react";
 import ResponsiveMobile from "./ResponsiveMobile";
 
@@ -21,5 +22,5 @@ export default function ResponsiveDesktop(props) {
       setIsMobile(false);
     }
   }, [isWidth]);
-  return <>{isMobile ? <></> : <div className="is_desktop">{props.children}</div>}</>;
+  return <>{isMobile ? <></> : <div className={clsx(props.className,"is_desktop")}>{props.children}</div>}</>;
 }

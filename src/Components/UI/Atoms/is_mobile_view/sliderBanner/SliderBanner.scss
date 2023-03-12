@@ -1,63 +1,85 @@
-@media (max-width: 640px) {
-  .slider_banner {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 95%;
-    height: 185px;
-    display: grid;
-    place-content: center;
-    border-radius: 1.5rem;
-    padding: 1rem;
-    margin: 1rem auto;
-    h3 {
-      font-size: 2rem;
-      font-weight: 500;
-      font-style: italic;
-      color: #fff;
-    }
+.slider_banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  place-content: center;
+  h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+    color: #fff;
   }
-  .banner_1 {
-    background-image: url("/src/assets/Images/image-hero-section.jpg");
-  }
-  .banner_2 {
-    background-image: url("/src/assets/Images/images-hero-section-2.png");
-  }
-
-  // Carousel
-  .slick-dots {
+}
+// Carousel
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
     display: flex;
     justify-content: center;
     align-items: center;
+    .slick-dot {
+      width: 100%;
+      height: 4px;
+      border-radius: 30px;
+      background-color: rgba(255, 255, 255, 0.5);
+      position: relative;
+      padding: 0;
+    }
+    .slick-dot::before {
+      content: "";
+      width: 0;
+    }
+  }
+  .slick-active {
+    .slick-dot::before {
+      content: "";
+      position: absolute;
+      background: #818181;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      animation: moving 3.7s ease-in-out 1;
+    }
+  }
+}
+
+.banner_1 {
+  background-image: url("/src/assets/Images/image-hero-section.jpg");
+}
+.banner_2 {
+  background-image: url("/src/assets/Images/images-hero-section-2.png");
+}
+
+@media (max-width: 639.98px) {
+  .slider_banner {
+    width: 95%;
+    height: 350px;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .slick-dots {
     bottom: 10%;
     li {
       width: 45px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .slick-dot {
-        width: 100%;
-        height: 4px;
-        border-radius: 30px;
-        background-color: rgba(255, 255, 255, 0.5);
-        position: relative;
-        padding: 0;
-      }
-      .slick-dot::before {
-        content: "";
-      }
     }
-    .slick-active {
-      .slick-dot::before {
-        content: "";
-        position: absolute;
-        background: #000;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 30px;
-        animation: moving 3.7s ease-in-out 1;
-      }
+  }
+}
+
+@media (min-width: 640px) {
+  .slider_banner {
+    width: 100%;
+    height: 500px;
+  }
+
+  .slick-dots {
+    bottom: 5%;
+    li {
+      width: 65px;
     }
   }
 }
